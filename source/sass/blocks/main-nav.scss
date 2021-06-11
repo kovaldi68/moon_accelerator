@@ -1,0 +1,9 @@
+.main-nav__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-nav__link {
+    color: $white-basic-opacity-70;
+}
