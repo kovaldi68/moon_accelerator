@@ -1,5 +1,4 @@
 .promo {
-  margin-bottom: 378px;
   padding-top: 318px;
   padding-bottom: 240px;
   background-color: $black-basic;
@@ -16,6 +15,7 @@
 .promo__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0 280px;
 }
 
 .promo__logo {
@@ -60,6 +60,7 @@
 
 @media (max-width: $tablet-width-max) {
   .promo {
+    margin-bottom: 378px;
     padding-top: 25px;
     padding-bottom: 80px;
   }
@@ -70,6 +71,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 0 21px;
     padding-top: 109px;
   }
 
@@ -102,6 +104,10 @@
 @media (max-width: $mobile-width-max) {
   .promo {
     padding-bottom: 70px;
+  }
+
+  .promo__container {
+    padding: 0 16px;
   }
 
   .promo__text{

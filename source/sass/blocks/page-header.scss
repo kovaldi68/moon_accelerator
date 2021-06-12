@@ -5,6 +5,10 @@
   right: 0;
 }
 
+.page-header__container {
+  padding: 0 280px;
+}
+
 .page-header__toggle {
   display: none;
   padding: 25px;
@@ -71,6 +75,10 @@
     }
   }
 
+  .page-header__container {
+    padding: 0 21px;
+  }
+
   .page-header__main-nav {
     display: none;
   }
@@ -88,5 +96,11 @@
     background-size: 30px;
     background-position: center;
     z-index: $z-index-burger;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .page-header__container {
+    padding: 0 16px;
   }
 }

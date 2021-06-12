@@ -62,7 +62,37 @@
     </section>
   </main>
   <footer class='page-footer'>
-
+    <div class='page-footer__container container'>
+      <h2 class='page-footer__title'>Как нас найти</h2>
+      <p class='page-footer__text'>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <div class='page-footer__map'>
+        <picture>
+          <source media='(max-width: 767px)' srcset='img/map-mobile.png 1x, img/map-mobile@2x.png 2x'>
+          <source media='(max-width: 1023px)' srcset='img/map-tablet.png 1x, img/map-tablet@2x.png 2x'>
+          <img class='page-footer__map-image' src='img/map-desktop.png' srcset='img/map-desktop@2x.png' alt='Карта местонахождения компании' width='957' height='530'>
+        </picture>
+      </div>
+      <ul class='page-fotter__user-list user-list'>
+        <li class='user-list__item user-list__item--mail'>
+          <a class='user-list__link' href='mailto:puteshestviemechta@gmail.ru' aria-label='Электронная почта компании'>
+            <svg class='user-list__icon user-list__icon--mail' width='30' height='30' aria-label='Номер телефона компании'>
+              <use xlink:href='img/sprite.svg#mail-icon'>
+              </use>
+            </svg>
+            puteshestviemechta@gmail.ru
+          </a>
+        </li>
+        <li class='user-list__item user-list__item--phone'>
+          <a class='user-list__link' href='tel:+7(499)-784-684-46' aria-label='Номер телефона компании'>
+            <svg class='user-list__icon user-list__icon--phone' width='30' height='30' aria-label='Номер телефона компании'>
+              <use xlink:href='img/sprite.svg#phone-icon'>
+              </use>
+            </svg>
+            +7 (499) -784-684-46
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
   <script src='js/script.js'></script>
 </body>
