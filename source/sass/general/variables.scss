@@ -1,6 +1,6 @@
 //viewports
 $mobile-width: 320px;
-$mobile-width-max: 767px;
+$mobile-width-max: 766px;
 $tablet-width: 768px;
 $tablet-width-max: 1023px;
 $desktop-width: 1920px;
@@ -25,12 +25,14 @@ $black-background: #131314;
 $black-decor: #141517;
 $black-decor-opacity-20: rgba($black-decor, 0.2);
 
-//green 
+//green
 
 $green-blue-main: #0ad9c6;
+$green-blue-hover: rgba($green-blue-main, 0.5);
 
 //grey
 
 $grey-background: #f6f7f9;;
 $grey-menu: #f6f6f6;
 $grey-dark-menu-item: #48494d;
+$grey-border: #c9ccd4;

@@ -13,4 +13,33 @@
   line-height: 15px;
   text-transform: uppercase;
   color: $white-basic;
+
+  &--submit {
+    padding: 15px 48px;
+    width: 58%;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
+    color: $black-basic;
+    border-radius: 6px;
+    text-transform: none;
+    background-color: $green-blue-main;
+  }
+}
+
+@media (max-width: $tablet-width-max) {
+  .button {
+    &--submit {
+      width: 56%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .button {
+    &--submit {
+      padding: 15px 28px;
+      width: 100%;
+    }
+  }
 }

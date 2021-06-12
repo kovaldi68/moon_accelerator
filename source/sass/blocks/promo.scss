@@ -1,6 +1,111 @@
 .promo {
-    background-image: url('../../img/bike-main-desktop.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  margin-bottom: 378px;
+  padding-top: 318px;
+  padding-bottom: 240px;
+  background-color: $black-basic;
+  background-image: url('../img/bike-main-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike-main-desktop@2x.jpg");
+  }
+}
+
+.promo__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.promo__logo {
+  display: inline-flex;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-bottom: 30px;
+  width: 68px;
+  height: 21px;
+}
+
+.promo__info {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  letter-spacing: -0.005em;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  color: $white-basic;
+}
+
+.promo__text {
+  margin: 0;
+  width: 70%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  color: $white-basic-opacity-80;
+}
+
+.promo__form {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+@media (max-width: $tablet-width-max) {
+  .promo {
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+
+  .promo__container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 109px;
+  }
+
+  .promo__logo {
+    position: absolute;
+    top: 0;
+    left: 21px;
+  }
+
+  .promo__info {
+    text-align: center;
+  }
+
+  .promo__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .promo__text{
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .promo__form {
+    margin-bottom: -550px;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .promo {
+    padding-bottom: 70px;
+  }
+
+  .promo__text{
+    margin: 0;
+    width: 100%;
+  }
 }
