@@ -61,8 +61,13 @@
 @media (max-width: $tablet-width-max) {
   .promo {
     margin-bottom: 378px;
-    padding-top: 25px;
     padding-bottom: 80px;
+    padding-top: 0;
+    background-image: url('../img/bike-main-tablet.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bike-main-tablet@2x.jpg");
+    }
   }
 
   .promo__container {
@@ -72,12 +77,12 @@
     justify-content: center;
     align-items: center;
     padding: 0 21px;
-    padding-top: 109px;
+    padding-top: 134px;
   }
 
   .promo__logo {
     position: absolute;
-    top: 0;
+    top: 25px;
     left: 21px;
   }
 
@@ -104,10 +109,16 @@
 @media (max-width: $mobile-width-max) {
   .promo {
     padding-bottom: 70px;
+    background-image: url('../img/bike-main-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bike-main-mobile@2x.jpg");
+    }
   }
 
   .promo__container {
     padding: 0 16px;
+    padding-top: 120px;
   }
 
   .promo__text{
