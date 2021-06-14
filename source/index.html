@@ -4,6 +4,7 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <meta name="description" content="Accelerator project: Moon">
   <title>Moon: сайт по продаже велосипедов</title>
   <link rel='preload' href='fonts/open-sans-light.woff2' as='font' type='font/woff2' crossorigin/>
   <link rel='preload' href='fonts/open-sans-regular.woff2' as='font' type='font/woff2' crossorigin/>
@@ -36,21 +37,21 @@
   <main class='page-main'>
     <section class='page-main__promo promo'>
       <div class='promo__container container'>
-        <a class='promo__logo'>
+        <a class='promo__logo' href='#'>
           <img src='img/logo.svg' alt='' width='68' height='21'>
         </a>
         <div class='promo__info'>
           <h1 class='promo__title'>Мы продаём велосипеды</h1>
           <p class='promo__text'>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
-        <form class='promo__form form form--ask' action=''>
+        <form class='promo__form form form--ask' action='https://echo.htmlacademy.ru' method='post'>
           <p class='form__description'>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class='form__input-wrapper'>
-            <input class='form__input form__input--name' type='text' id='user-name' name='user-name' placeholder='Введите Ваше Имя'>
+            <input class='form__input form__input--name' type='text' id='user-name' title="Разрешено использовать только пробелы и латинские буквы, не менее 6" name='user-name' placeholder='Введите Ваше Имя' pattern="^[A-Za-zА-Яа-яЁё\s]{6,}">
             <label class='form__label form__label--name' for='user-name'></label>
           </div>
           <div class='form__input-wrapper'>
-            <input class='form__input form__input--phone' type='text' id='user-phone' name='user-phone' placeholder='Введите Ваш номер телефона'>
+            <input class='form__input form__input--phone' type='text' id='user-phone' title='Укажите не менее 6 цифр, начиная с 8' name='user-phone' placeholder='Введите Ваш номер телефона' pattern='8*[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}' minlength='6'>
             <label class='form__label form__label--phone' for='user-phone'></label>
           </div>
           <button class='form__button button button--submit' type='submit'>Подобрать велосипед мечты</button>
@@ -112,7 +113,7 @@
             <source media='(max-width: 1023px)' srcset='img/video-mask-tablet.jpg 1x, img/video-mask-tablet@2x.jpg 2x'>
             <img class='bike-video__image' src='img/video-mask-desktop.jpg' srcset='img/video-mask-desktop@2x.jpg' alt='Чёрный велосипед на черном фоне' width='929' height='522'>
           </picture>
-          <button class='bike-video__button button button--video'></button>
+          <button class='bike-video__button button button--video' aria-label='Воспроизвести видео'></button>
         </div>
       </div>
     </section>
