@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html class='page' lang="ru">
+<html class='page' lang='ru'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <title>Moon: сайт по продаже велосипедов</title>
   <link rel='preload' href='fonts/open-sans-light.woff2' as='font' type='font/woff2' crossorigin/>
   <link rel='preload' href='fonts/open-sans-regular.woff2' as='font' type='font/woff2' crossorigin/>
   <link rel='preload' href='fonts/open-sans-semibold.woff2' as='font' type='font/woff2' crossorigin/>
   <link rel='preload' href='fonts/open-sans-bold.woff2' as='font' type='font/woff2' crossorigin/>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel='stylesheet' href='css/style.min.css'>
 </head>
 <body class='page__body'>
   <header class='page-header page-header--nojs'>
     <div class='page-header__container container'>
       <nav class='page-header__main-nav main-nav'>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
+        <ul class='main-nav__list'>
+          <li class='main-nav__item'>
             <a class='main-nav__link' href='#about'>О нас</a>
           </li>
-          <li class="main-nav__item">
+          <li class='main-nav__item'>
             <a class='main-nav__link' href='#bike-types'>Виды велосипедов</a>
           </li>
-          <li class="main-nav__item">
+          <li class='main-nav__item'>
             <a class='main-nav__link' href='#bike-video'>Видео про велосипеды</a>
           </li>
-          <li class="main-nav__item">
+          <li class='main-nav__item'>
             <a class='main-nav__link' href='#contacts'>Контакты</a>
           </li>
         </ul>
@@ -37,20 +37,20 @@
     <section class='page-main__promo promo'>
       <div class='promo__container container'>
         <a class='promo__logo'>
-          <img src='img/logo.svg' alt="" width="68" height="21">
+          <img src='img/logo.svg' alt='' width='68' height='21'>
         </a>
         <div class='promo__info'>
           <h1 class='promo__title'>Мы продаём велосипеды</h1>
           <p class='promo__text'>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
         <form class='promo__form form form--ask' action=''>
-          <p class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <p class='form__description'>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class='form__input-wrapper'>
-            <input class='form__input form__input--name' type="text" id='user-name' name='user-name' placeholder='Введите Ваше Имя'>
+            <input class='form__input form__input--name' type='text' id='user-name' name='user-name' placeholder='Введите Ваше Имя'>
             <label class='form__label form__label--name' for='user-name'></label>
           </div>
           <div class='form__input-wrapper'>
-            <input class='form__input form__input--phone' type="text" id='user-phone' name='user-phone' placeholder='Введите Ваш номер телефона'>
+            <input class='form__input form__input--phone' type='text' id='user-phone' name='user-phone' placeholder='Введите Ваш номер телефона'>
             <label class='form__label form__label--phone' for='user-phone'></label>
           </div>
           <button class='form__button button button--submit' type='submit'>Подобрать велосипед мечты</button>
@@ -59,13 +59,47 @@
     </section>
     <section class='page-main__about about'>
       <div class='about__container container'>
-        <h2 class="about__title">Несколько фактов о нас</h2>
-        <ol class="about__advantages-list">
-          <li class="about__advantages-item">Самый широкий выбор велосипедов!</li>
-          <li class="about__advantages-item">Доставка велосипедов по всей России!</li>
-          <li class="about__advantages-item">Большой выбор крутых аксессуаров!</li>
-          <li class="about__advantages-item">Профессиональные консультации!</li>
+        <h2 class='about__title'>Несколько фактов о нас</h2>
+        <ol class='about__advantages-list'>
+          <li class='about__advantages-item'>Самый широкий выбор велосипедов!</li>
+          <li class='about__advantages-item'>Доставка велосипедов по всей России!</li>
+          <li class='about__advantages-item'>Большой выбор крутых аксессуаров!</li>
+          <li class='about__advantages-item'>Профессиональные консультации!</li>
         </ol>
+      </div>
+    </section>
+    <section class='page-main__bike-types bike-types'>
+      <div class='bike-types__container container'>
+        <h2 class='bike-types__title'>Виды велосипедов</h2>
+        <ul class='bike-types__list'>
+          <li class='bike-types__item'>
+            <div class='bike-types__photo'>
+              <picture>
+                <source media='(max-width: 1023px)' srcset='img/road-bike-mobile.jpg 1x, img/road-bike-mobile@2x.jpg 2x'>
+                <img class='bike-types__image' src='img/road-bike-desktop.jpg' srcset='img/road-bike-desktop@2x.jpg' alt='Велосипед с корзинкой на руле' class='bike-types__image' width='342' height='513'>
+              </picture>
+            </div>
+            <h3 class='bike-types__name'>Дорожный велосипед</h3>
+          </li>
+          <li class='bike-types__item'>
+            <div class='bike-types__photo'>
+              <picture>
+                <source media='(max-width: 1023px)' srcset='img/mount-bike-mobile.jpg 1x, img/mount-bike-mobile@2x.jpg 2x'>
+                <img class='bike-types__image' src='img/mount-bike-desktop.jpg' srcset='img/mount-bike-desktop@2x.jpg' alt='Велосипед с корзинкой на руле' class='bike-types__image' width='342' height='566'>
+              </picture>
+            </div>
+            <h3 class='bike-types__name'>Горный велосипед</h3>
+          </li>
+          <li class='bike-types__item'>
+            <div class='bike-types__photo'>
+              <picture>
+                <source media='(max-width: 1023px)' srcset='img/kid-bike-mobile.jpg 1x, img/kid-bike-mobile@2x.jpg 2x'>
+                <img class='bike-types__image' src='img/kid-bike-desktop.jpg' srcset='img/kid-bike-desktop@2x.jpg' alt='Велосипед с корзинкой на руле' class='bike-types__image' width='342' height='503'>
+              </picture>
+            </div>
+            <h3 class='bike-types__name'>Детский велосипед</h3>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -80,7 +114,7 @@
           <img class='page-footer__map-image' src='img/map-desktop.png' srcset='img/map-desktop@2x.png' alt='Карта местонахождения компании' width='957' height='530'>
         </picture>
       </div>
-      <ul class='page-fotter__user-list user-list'>
+      <ul class='page-footer__user-list user-list'>
         <li class='user-list__item user-list__item--mail'>
           <a class='user-list__link' href='mailto:puteshestviemechta@gmail.ru' aria-label='Электронная почта компании'>
             <svg class='user-list__icon user-list__icon--mail' width='30' height='30' aria-label='Номер телефона компании'>
