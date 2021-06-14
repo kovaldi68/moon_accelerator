@@ -28,6 +28,7 @@ $black-decor-opacity-20: rgba($black-decor, 0.2);
 //green
 
 $green-blue-main: #0ad9c6;
+$green-blue-main-opacity-70: rgba($green-blue-main, 0.7);
 $green-blue-hover: rgba($green-blue-main, 0.5);
 
 //grey
@@ -43,3 +44,8 @@ $grey-border: #c9ccd4;
 $advantage-offset: 38px;
 $advantage-offset-tablet: 30px;
 $bike-types-offset: 50px;
+
+
+//transition
+
+$transition-time-slow: 300ms;

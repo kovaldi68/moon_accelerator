@@ -29,6 +29,12 @@
   margin: $bike-types-offset / 2;
   margin-top: calc(#{$bike-types-offset} / 2 + 10px);
   width: calc((100% / 3) - #{$bike-types-offset});
+  transition: all $transition-time-slow ease-in-out;
+
+  &:hover {
+    scale: 1.05;
+    cursor: pointer;
+  }
 
   .bike-types__photo {
     position: relative;
