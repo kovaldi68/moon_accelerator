@@ -9,38 +9,40 @@ const body = document.body;
 const nameInput = document.querySelector('.form__input--name');
 const phoneInput = document.querySelector('.form__input--phone');
 
-
 const ALERT_SHOW_TIME = 3000;
+
 
 pageHeader.classList.remove('page-header--nojs');
 
-const onSubmitButtonHandler = function(e) {
-  e.preventDefault();
-
-  // const message = document.createElement('div');
-
-  // message.style.zIndex = 100;
-  // message.style.position = 'absolute';
-  // message.style.left = 0;
-  // message.style.top = 0;
-  // message.style.right = 0;
-  // message.style.color = 'white';
-  // message.style.padding = '16px 3px';
-  // message.style.fontSize = '15px';
-  // message.style.textAlign = 'center';
-  // message.style.backgroundColor = '#0ad9c6';
-
-  // message.textContent = 'Форма успешно отправлена!';
-  // body.appendChild(message);
-
-  // setTimeout(() => {
-  //   message.remove();
-  // }, ALERT_SHOW_TIME);
+const onSubmitButtonHandler = function() {
 
   if (isStorageSupport) {
     localStorage.setItem('userName', nameInput.value);
     localStorage.setItem('userPhone', phoneInput.value);
   }
+}
+
+const showAlert = (message, color) => {
+  const alertContainer = document.createElement('div');
+
+  alertContainer.style.zIndex = 100;
+  alertContainer.style.position = 'absolute';
+  alertContainer.style.left = 0;
+  alertContainer.style.top = 0;
+  alertContainer.style.right = 0;
+  alertContainer.style.color = 'white';
+  alertContainer.style.padding = '16px 3px';
+  alertContainer.style.fontSize = '15px';
+  alertContainer.style.textAlign = 'center';
+  alertContainer.style.backgroundColor = color;
+
+  alertContainer.textContent = message;
+
+  document.body.append(alertContainer);
+
+  setTimeout(() => {
+    alertContainer.remove();
+  }, ALERT_SHOW_TIME);
 }
 
 const onMenuHandler = (evt) => {
@@ -98,7 +100,8 @@ const storageData = () => {
   }
 }
 
-// submitButton.addEventListener('click', onSubmitButtonHandler);
+submitButton.addEventListener('click', onSubmitButtonHandler);
 menuToggle.addEventListener('click', onMenuHandler);
 closeHeader();
 scrollSmooth();
+storageData();

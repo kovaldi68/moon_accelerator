@@ -22,7 +22,7 @@
 
 .about__advantages-item {
   position: relative;
-  padding-top: 56px;
+  padding-top: 50px;
   margin: $advantage-offset / 2;
   width: calc((100% / 4) - #{$advantage-offset});
   font-size: 22px;
@@ -72,6 +72,7 @@
     margin-right: $advantage-offset-tablet / 2;
     margin-bottom: 20px;
     margin-top: 20px;
+    padding-top: 55px;
     width: calc((100% / 2) - #{$advantage-offset-tablet});
     counter-increment: action-counter;
   }
@@ -79,7 +80,7 @@
 
 @media (max-width: $mobile-width-max) {
   .about {
-    padding-top: 37px;
+    padding-top: 35px;
   }
 
   .about__container {
@@ -93,9 +94,11 @@
   }
 
   .about__advantages-item {
-    width: 100%;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+    width: 100%;
+    font-size: 18px;
 
     &:last-child {
       margin-bottom: 0;

@@ -9,6 +9,15 @@
   padding: 0 280px;
 }
 
+.page-header__logo {
+  position: absolute;
+  display: inline-flex;
+  top: 318px;
+  left: 280px;
+  width: 68px;
+  height: 21px;
+}
+
 .page-header__toggle {
   display: none;
   padding: 25px;
@@ -33,6 +42,10 @@
         max-width: none;
       }
 
+      .page-header__logo {
+        display: none;
+      }
+
       .page-header__main-nav {
         display: block;
         padding: 0;
@@ -52,6 +65,7 @@
     }
 
     &--nojs {
+      position: relative;
       padding-top: 100px;
       padding-bottom: 138px;
       background-color: $white-basic;
@@ -62,21 +76,17 @@
         max-width: none;
       }
 
+      .page-header__logo {
+        display: none;
+      }
+
       .page-header__main-nav {
         display: block;
         padding: 0;
       }
 
       .page-header__toggle {
-        background-color: $white-basic;
-        background-image: url('../img/modal-cross.svg');
-        background-size: 22px;
-
-        &:hover,
-        &:focus,
-        &:active {
-          background-image: url('../img/modal-cross-active.svg');
-        }
+        display: none;
       }
     }
   }
@@ -87,6 +97,13 @@
 
   .page-header__main-nav {
     display: none;
+  }
+
+  .page-header__logo {
+    position: relative;
+    top: 20px;
+    left: 0;
+    z-index: $z-index-logo;
   }
 
   .page-header__toggle {
