@@ -8,7 +8,7 @@
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/bike-main-desktop@2x.jpg");
+    background-image: url('../img/bike-main-desktop@2x.jpg');
   }
 }
 
@@ -24,24 +24,24 @@
   margin-right: 10px;
   letter-spacing: -0.005em;
   align-self: flex-end;
-}
 
-.promo__title {
-  margin: 0;
-  margin-bottom: 24px;
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 64px;
-  color: $white-basic;
-}
+  h1 {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 64px;
+    color: $white-basic;
+  }
 
-.promo__text {
-  margin: 0;
-  width: 85%;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 32px;
-  color: $white-basic-opacity-80;
+  p {
+    margin: 0;
+    width: 85%;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    color: $white-basic-opacity-80;
+  }
 }
 
 .promo__form {
@@ -67,19 +67,11 @@
     margin-right: 0;
     margin-bottom: 30px;
     text-align: center;
-  }
 
-  .promo__text {
-    margin: 0 auto;
-    width: 75%;
-  }
-
-  .promo__logo {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin: 0 auto;
+    p {
+      margin: 0 auto;
+      width: 75%;
+    }
   }
 
   .promo__form {
@@ -106,13 +98,6 @@
     padding: 0;
   }
 
-  .promo__logo {
-    position: absolute;
-    margin: 0;
-    top: 25px;
-    left: 21px;
-  }
-
   .promo__info {
     width: 100%;
     margin-bottom: 66px;
@@ -127,22 +112,22 @@
     background-color: $black-basic;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bike-main-tablet@2x.jpg");
+      background-image: url('../img/bike-main-tablet@2x.jpg');
     }
-  }
 
-  .promo__title {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 56%;
-    font-size: 30px;
-    line-height: 42px;
-  }
-
-  .promo__text{
-    margin: 0 auto;
-    width: 56%;
-    font-size: 18px;
+    h1 {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      width: 56%;
+      font-size: 30px;
+      line-height: 42px;
+    }
+    
+    p {
+      margin: 0 auto;
+      width: 56%;
+      font-size: 18px;
+    }
   }
 
   .promo__form {
@@ -160,15 +145,15 @@
     padding-bottom: 70px;
     padding-left: 16px;
     padding-right: 16px;
-  }
 
-  .promo__title {
-    width: 100%;
-  }
-
-  .promo__text{
-    margin: 0;
-    width: 100%;
+    h1 {
+      width: 100%;
+    }
+    
+    p {
+      margin: 0;
+      width: 100%;
+    }
   }
 
   .promo__form {

@@ -13,7 +13,7 @@
   position: absolute;
   display: inline-flex;
   top: 318px;
-  left: 280px;
+  left: auto;
   width: 68px;
   height: 21px;
 }
@@ -114,7 +114,7 @@
     height: 50px;
     width: 50px;
     background-color: $green-blue-main;
-    background-image: url("../img/burger-menu.svg");
+    background-image: url('../img/burger-menu.svg');
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;

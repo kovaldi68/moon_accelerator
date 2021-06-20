@@ -2,46 +2,46 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
 
-.form__description {
-  margin: 0;
-  margin-bottom: 18px;
-  padding-top: 4px;
-  width: 74%;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: -0.005em;
-  color: $white-basic;
+  p {
+    margin: 0;
+    margin-bottom: 18px;
+    padding-top: 4px;
+    width: 74%;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: $white-basic;
+  }
 }
 
 .form__input-wrapper {
   width: 74%;
   margin-bottom: 20px;
-}
-
-.form__input {
-  padding-top: 13px;
-  padding-bottom: 11px;
-  padding-left: 29px;
-  padding-right: 29px;
-  width: 100%;
-  font-size: 15px;
-  line-height: 24px;
-  border: 1px solid $grey-border;
-  border-radius: 6px;
-  outline: none;
-
-  &:hover,
-  &:focus,
-  &:active {
-    outline: 2px solid $green-blue-main;
-  }
-
-  &::placeholder {
-    color: $black-placeholder-opacity-50;
+  
+  input {
+    padding-top: 13px;
+    padding-bottom: 11px;
+    padding-left: 29px;
+    padding-right: 29px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 24px;
+    border: 1px solid $grey-border;
+    border-radius: 6px;
+    outline: none;
+  
+    &:hover,
+    &:focus,
+    &:active {
+      outline: 2px solid $green-blue-main;
+    }
+  
+    &::placeholder {
+      color: $black-placeholder-opacity-50;
+    }
   }
 }
 
@@ -61,32 +61,32 @@
   .form {
     width: 100%;
     padding: 0 21px;
-  }
 
-  .form__description {
-    margin-bottom: 30px;
-    width: 45%;
-    font-size: 18px;
-    color: $black-basic;
+    p {
+      margin-bottom: 30px;
+      width: 45%;
+      font-size: 18px;
+      color: $black-basic;
+    }
   }
 
   .form__input-wrapper {
     width: 45%;
-  }
 
-  .form__input {
-    padding: 11px 25px;
+    input {
+      padding: 11px 25px;
+    }
   }
 }
 
 @media (max-width: $mobile-width-max) {
   .form {
     padding: 0 16px;
-  }
 
-  .form__description {
-    margin-bottom: 20px;
-    width: 100%;
+    p {
+      margin-bottom: 20px;
+      width: 100%;
+    }
   }
 
   .form__input-wrapper {

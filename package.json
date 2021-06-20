@@ -7,10 +7,7 @@
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x",
     "gulp": "4.0.x",
-    "gulp-csso": "^4.0.1",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
@@ -32,8 +29,7 @@
     "build": "gulp build",
     "start": "gulp start",
     "webp": "gulp webp",
-    "sprite": "gulp sprite",
-    "deploy": "gulp gh-pages -d build"
+    "sprite": "gulp sprite"
   },
   "browserslist": [
     "last 2 versions",
