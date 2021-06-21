@@ -15,6 +15,13 @@ const svgsprite = require("gulp-svg-sprite")
 const posthtml = require("gulp-posthtml");
 const include = require("posthtml-include");
 const del = require("del");
+const concat = require('gulp-concat');
+
+gulp.task("scripts", function() {
+  return gulp.src("source/js/*.js")
+    .pipe(concat("main.js"))
+    .pipe(gulp.dest("build/js"));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -91,7 +98,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/img/**",
     "source//*.ico"
     ], {
@@ -113,5 +119,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "webp", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "scripts", "webp", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
