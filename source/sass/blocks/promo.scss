@@ -50,35 +50,13 @@
 }
 
 @media (max-width: 1239px) {
-  .promo {
-    padding-top: 350px;
-  }
-
   .promo__container {
-    grid-template-columns: 1fr;
     padding: 0 150px;
   }
 
   .promo__info {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
     margin-right: 0;
     margin-bottom: 30px;
-    text-align: center;
-
-    p {
-      margin: 0 auto;
-      width: 75%;
-    }
-  }
-
-  .promo__form {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
   }
 }
 
@@ -105,6 +83,7 @@
     padding-bottom: 80px;
     padding-left: 21px;
     padding-right: 21px;
+    text-align: center;
     background-image: url('../img/bike-main-tablet.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -145,6 +124,11 @@
     padding-bottom: 70px;
     padding-left: 16px;
     padding-right: 16px;
+    background-image: url('../../img/bike-main-mobile.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/bike-main-mobile@2x.jpg');
+    }
 
     h1 {
       width: 100%;

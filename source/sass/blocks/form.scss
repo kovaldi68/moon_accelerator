@@ -20,7 +20,7 @@
 .form__input-wrapper {
   width: 74%;
   margin-bottom: 20px;
-  
+
   input {
     padding-top: 13px;
     padding-bottom: 11px;
@@ -32,13 +32,13 @@
     border: 1px solid $grey-border;
     border-radius: 6px;
     outline: none;
-  
+
     &:hover,
     &:focus,
     &:active {
       outline: 2px solid $green-blue-main;
     }
-  
+    
     &::placeholder {
       color: $black-placeholder-opacity-50;
     }

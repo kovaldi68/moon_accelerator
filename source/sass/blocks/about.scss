@@ -19,6 +19,7 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: -$advantage-offset / 2;
 
   li {

@@ -8,6 +8,7 @@
 
 .user-list__item {
   margin-right: 90px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 22px;
 
@@ -40,6 +41,7 @@
 .user-list__icon {
   margin-right: 15px;
   fill: $green-blue-main;
+  stroke-width: 2px;
 
   &--mail {
     width: 26px;
@@ -49,6 +51,20 @@
   &--phone {
     width: 22px;
     height: 23px;
+    fill: none;
+    stroke: $green-blue-main;
+  }
+}
+
+@media (max-width: 1045px) {
+  .user-list__item {
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: $tablet-width-max) {
+  .user-list__item {
+    margin-right: 90px;
   }
 }
 
