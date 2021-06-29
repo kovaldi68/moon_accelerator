@@ -49,7 +49,7 @@
   grid-column-end: 3;
 }
 
-@media (max-width: 1239px) {
+@media (max-width: 1432px) {
   .promo__container {
     padding: 0 150px;
   }
@@ -124,7 +124,7 @@
     padding-bottom: 70px;
     padding-left: 16px;
     padding-right: 16px;
-    background-image: url('../../img/bike-main-mobile.jpg');
+    background-image: url('../img/bike-main-mobile.jpg');
 
     @media (min-resolution: 2dppx) {
       background-image: url('../img/bike-main-mobile@2x.jpg');
