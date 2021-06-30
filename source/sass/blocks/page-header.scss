@@ -30,6 +30,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .page-header__container {
+    padding: 0 70px;
+  }
+}
+
 @media (max-width: $tablet-width-max) {
   .page-header {
     &--opened {

@@ -60,6 +60,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .promo__container {
+    padding: 0 70px;
+  }
+}
+
 @media (max-width: $tablet-width-max) {
   .promo {
     padding: 0;
